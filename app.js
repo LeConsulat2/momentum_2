@@ -17,8 +17,6 @@ function onLoginSubmit(event) {
     // greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-
-
 loginForm.addEventListener("submit", onLoginSubmit);
 
 function paintGreetings(username){
