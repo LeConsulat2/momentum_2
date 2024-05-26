@@ -1,14 +1,27 @@
-/* body {
+body {
     background-color: beige;
-} */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1, h2 {
+    margin: 10px 0;
+    text-align: center;
+}
 
 h1 {
-    color: blue;
-    transition: 0.5s ease-in-out;
+    color: black;
+    transition: color 0.5s ease-in-out;
 }
 
 .clicked {
-    color:red;
+    color: red;
 }
 
 .hidden {
@@ -16,13 +29,76 @@ h1 {
 }
 
 img {
-    position:absolute;
-    width:100%;
-    height:100%;
-    left: 0px;
-    top: 0px;
-    right:0px;
-    bottom:0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
     z-index: -1;
-    opacity:0.8;
+    opacity: 0.8;
+}
+
+#login-form, #todo-form {
+    margin: 20px 0;
+}
+
+#login-form input, #todo-form input {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#login-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: darkblue;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#quote, #weather {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#quote span, #weather span {
+    display: block;
+}
+
+#quote span:first-child {
+    display: block;
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#quote span:last-child {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#weather {
+    margin: 20px 0;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#weather span {
+    display: block;
 }
